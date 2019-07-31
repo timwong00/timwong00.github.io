@@ -11,11 +11,13 @@
     <script src="./scripts/contact.js"></script>
   </head>
   <body>
-    <div class="mainContainer">
+    <div class="allContainer">
       <!-- Navigation -->
       <header class="headerContainer">
         <h1 class="pageTitle">
-          <a class="links" onclick="onNavigate('/')">T I M W O N G</a>
+          <a class="links" onclick="onNavigate('/')"
+            >T I M <span class="space">W O N G</span></a
+          >
         </h1>
         <nav class="navBar">
           <a class="links" onclick="onNavigate('/')">Home</a>
@@ -30,47 +32,31 @@
       <main id="contentContainer" class="contentContainer">
         <!-- Landing -->
         <section id="landing" class="landing">
-          <h3 class="landingTitle">frontend developer</h3>
-          <p class="landingSubtitle">/frən(t) ˈend dəˈveləpər/</p>
-          <p class="landingText1">noun</p>
-          <ol>
-            <li></li>
-            <li>Passionate about learning new technologies</li>
-            <li>Constantly improving exisiting skill set</li>
-            <li>Situated in the Metro Detroit area</li>
-          </ol>
-          <!-- <p class="landingText2">
-            Hi! I'm Tim, I'm passionate about learning new technologies while
-            working constantly to improve my existing skillset. Currently, I'm a
-            frontend developer situated in the Metro Detroit area.
-          </p> -->
+          <h3 class="vocabulary">frontend developer</h3>
+          <p class="phonetic">/frən(t) ˈend dəˈveləpər/</p>
+          <p class="grammar">noun</p>
+
+          <div class="definitions">
+            <span class="blue">1. </span>
+            <p>
+              Former JET participant that studied Management and Japanese at
+              Purdue University.
+            </p>
+            <span class="blue">2. </span>
+            <p>
+              Passionate about learning new technologies and gaining valuable
+              experiences.
+            </p>
+            <span class="blue">3. </span>
+            <p>
+              Constantly improving exisiting skill set.
+            </p>
+            <span class="blue">4. </span>
+            <p>Based in the Metro Detroit area.</p>
+          </div>
         </section>
-        <!-- Projects
-        <section id="projects" class="projects">
-          <h3 class="title">P R O J E C T S</h3>
-          <a
-            class="links"
-            href="https://gc-blackout.herokuapp.com"
-            target="_blank"
-          >
-            Blackout - Escape Room Game
-          </a>
-          <a href="https://gc-blackout.herokuapp.com" target="_blank">
-            <img class="blackout" src="assets/Blackout Title Screen.png" />
-          </a>
-          <a
-            class="links"
-            href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
-            >Github</a
-          >
-          <p>Languages: HTML | CSS | Angular 7</p>
-        </section> -->
-        <!-- Contact
-        <section id="contact" class="contact">
-          <h3 class="title">C O N T A C T</h3>
-          <img class="profileImg" src="./assets/IMG_5848.jpeg" />
-        </section> -->
       </main>
+
       <!-- Footer -->
       <footer class="footerContainer">
         <a href="https://www.linkedin.com/in/timwong00/" target="_blank"

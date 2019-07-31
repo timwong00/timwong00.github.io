@@ -5,6 +5,10 @@
   height: 85vh;
 }
 
+.blackout {
+  width: 300px;
+  height: 200px;
+}
 /* .title {
   align-items: flex-start;
 } */
