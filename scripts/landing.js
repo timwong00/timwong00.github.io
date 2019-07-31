@@ -1,4 +1,4 @@
-// let landing = `
+let landing = `
 <section id="landing" class="landing">
   <h3 class="vocabulary">frontend developer</h3>
   <p class="phonetic">/frən(t) ˈend dəˈveləpər/</p>
@@ -21,4 +21,4 @@
     <p>Based in the Metro Detroit area.</p>
   </div>
 </section>;
-// `;
+`;
