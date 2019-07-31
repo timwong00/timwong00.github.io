@@ -2,13 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 85vh;
+  height: 80vh;
 }
 
 .blackout {
   width: 300px;
   height: 200px;
 }
+
+.githubIcon {
+  width: 25px;
+  height: 25px;
+}
+
 /* .title {
   align-items: flex-start;
 } */
+
+@media screen and (min-width: 768px) {
+  .projects {
+    padding: 10% 5%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

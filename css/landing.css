@@ -3,15 +3,14 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 85vh;
-  padding: 5%;
+  height: 80vh;
+  padding: 0 5%;
+  box-sizing: border-box;
+  width: 100vw;
 }
 
 .vocabulary {
-  margin: 25% 0 0 0;
+  margin-bottom: 0;
 }
 
 .phonetic {
@@ -38,4 +37,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .landing {
+    padding: 10% 5%;
+  }
+
+  .vocabulary {
+    font-size: 28px;
+  }
 }

@@ -1,3 +1,4 @@
+const gitLink = "https://timwong00.github.io";
 const routes = {
   "/": landing,
   "/projects": projects,
