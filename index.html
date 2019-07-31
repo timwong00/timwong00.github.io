@@ -5,46 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tim Wong | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header id="header">
-      <h1>Tim Wong</h1>
-      <nav id="navBar">
-        <a href="#">Home</a>
-        <a href="#"> Projects</a>
-        <a href="#">About Me</a>
-      </nav>
-    </header>
+    <div class="mainContainer">
+      <header class="headerContainer">
+        <h1 class="pageTitle">
+          <a class="links" href="#landing">T I M W O N G</a>
+        </h1>
+        <nav class="navBar">
+          <a class="links" href="#landing">Home</a>
+          <span class="pipes"> | </span>
+          <a class="links" href="#projects"> Projects</a>
+          <span class="pipes"> | </span>
+          <a class="links" href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <main id="">
-      <section id="banner">
-        <img id="profileImg" src="./assets/IMG_5848.jpeg" />
-      </section>
+      <main class="contentContainer">
+        <section id="landing" class="landing">
+          <h3 class="landingTitle">frontend developer</h3>
+          <p class="landingSubtitle">/frən(t) ˈend dəˈveləpər/</p>
+          <p class="landingText1">noun</p>
+          <p class="landingText2">
+            Hi! I'm Tim, I'm passionate about learning new technologies while
+            working constantly to improve my existing skillset. Currently, I'm a
+            frontend developer situated in the Metro Detroit area.
+          </p>
+        </section>
 
-      <section>
-        <h3>Projects</h3>
-        <a href="https://gc-blackout.herokuapp.com" target="_blank">
-          Blackout - Escape Room Game
-        </a>
-        <a href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
-          >Github</a
-        >
-        <a href="https://gc-blackout.herokuapp.com" target="_blank"
-          >Application</a
-        >
-        <p>Languages: HTML | CSS | Angular 7</p>
-      </section>
-    </main>
+        <section id="projects" class="projects">
+          <h3 class="title">P R O J E C T S</h3>
+          <a
+            class="links"
+            href="https://gc-blackout.herokuapp.com"
+            target="_blank"
+          >
+            Blackout - Escape Room Game
+          </a>
+          <a href="https://gc-blackout.herokuapp.com" target="_blank">
+            <img class="blackout" src="assets/Blackout Title Screen.png" />
+          </a>
+          <a
+            class="links"
+            href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
+            >Github</a
+          >
+          <p>Languages: HTML | CSS | Angular 7</p>
+        </section>
 
-    <footer id="footer">
-      <a>LinkedIn</a>
-      <a>Github</a>
-      <a>Email</a>
-      <a>Resume</a>
-      <p>Copyright 2019 © Tim Wong | Frontend Developer</p>
-    </footer>
+        <section id="contact" class="contact">
+          <h3 class="title">C O N T A C T</h3>
+          <img class="profileImg" src="./assets/IMG_5848.jpeg" />
+        </section>
+      </main>
 
+      <footer class="footerContainer">
+        <a href="https://www.linkedin.com/in/timwong00/">LinkedIn</a>
+        <a href="https://github.com/timwong00">Github</a>
+        <a href="mailto:wongtime317@gmail.com">Email</a>
+        <a>Resume</a>
+      </footer>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
