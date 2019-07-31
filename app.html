@@ -6,34 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tim Wong | Portfolio</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./scripts/landing.js"></script>
+    <script src="./scripts/projects.js"></script>
+    <script src="./scripts/contact.js"></script>
   </head>
   <body>
     <div class="mainContainer">
+      <!-- Navigation -->
       <header class="headerContainer">
         <h1 class="pageTitle">
-          <a class="links" href="#landing">T I M W O N G</a>
+          <a class="links" onclick="onNavigate('/')">T I M W O N G</a>
         </h1>
         <nav class="navBar">
-          <a class="links" href="#landing">Home</a>
+          <a class="links" onclick="onNavigate('/')">Home</a>
           <span class="pipes"> | </span>
-          <a class="links" href="#projects"> Projects</a>
+          <a class="links" onclick="onNavigate('/projects')"> Projects</a>
           <span class="pipes"> | </span>
-          <a class="links" href="#contact">Contact</a>
+          <a class="links" onclick="onNavigate('/contact')">Contact</a>
         </nav>
       </header>
 
-      <main class="contentContainer">
+      <!-- Content -->
+      <main id="contentContainer" class="contentContainer">
+        <!-- Landing -->
         <section id="landing" class="landing">
           <h3 class="landingTitle">frontend developer</h3>
           <p class="landingSubtitle">/frən(t) ˈend dəˈveləpər/</p>
           <p class="landingText1">noun</p>
-          <p class="landingText2">
+          <ol>
+            <li></li>
+            <li>Passionate about learning new technologies</li>
+            <li>Constantly improving exisiting skill set</li>
+            <li>Situated in the Metro Detroit area</li>
+          </ol>
+          <!-- <p class="landingText2">
             Hi! I'm Tim, I'm passionate about learning new technologies while
             working constantly to improve my existing skillset. Currently, I'm a
             frontend developer situated in the Metro Detroit area.
-          </p>
+          </p> -->
         </section>
-
+        <!-- Projects
         <section id="projects" class="projects">
           <h3 class="title">P R O J E C T S</h3>
           <a
@@ -52,21 +64,23 @@
             >Github</a
           >
           <p>Languages: HTML | CSS | Angular 7</p>
-        </section>
-
+        </section> -->
+        <!-- Contact
         <section id="contact" class="contact">
           <h3 class="title">C O N T A C T</h3>
           <img class="profileImg" src="./assets/IMG_5848.jpeg" />
-        </section>
+        </section> -->
       </main>
-
+      <!-- Footer -->
       <footer class="footerContainer">
-        <a href="https://www.linkedin.com/in/timwong00/">LinkedIn</a>
-        <a href="https://github.com/timwong00">Github</a>
-        <a href="mailto:wongtime317@gmail.com">Email</a>
-        <a>Resume</a>
+        <a href="https://www.linkedin.com/in/timwong00/" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/timwong00" target="_blank">Github</a>
+        <a href="mailto:wongtime317@gmail.com" target="_blank">Email</a>
+        <a href="assets/Resume.pdf" target="_blank">Resume</a>
       </footer>
     </div>
-    <script src="main.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
