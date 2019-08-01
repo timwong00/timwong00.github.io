@@ -15,16 +15,16 @@
       <!-- Navigation -->
       <header class="headerContainer">
         <h1 class="pageTitle">
-          <a class="links" onclick="onNavigate('/')"
+          <a class="links" href="#landing"
             >T I M <span class="space">W O N G</span></a
           >
         </h1>
         <nav class="navBar">
-          <a class="links" onclick="onNavigate('/')">Home</a>
+          <a class="links" href="#landing">Home</a>
           <span class="pipes"> | </span>
-          <a class="links" onclick="onNavigate('/projects')"> Projects</a>
+          <a class="links" href="#projects"> Projects</a>
           <span class="pipes"> | </span>
-          <a class="links" onclick="onNavigate('/contact')">Contact</a>
+          <a class="links" href="#contact">Contact</a>
         </nav>
       </header>
 
@@ -54,6 +54,36 @@
             <span class="blue">4. </span>
             <p>Based in the Metro Detroit area.</p>
           </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects">
+          <h3 class="title">projects</h3>
+          <div class="column">
+            <a
+              class="links"
+              href="https://gc-blackout.herokuapp.com"
+              target="_blank"
+            >
+              Blackout - Escape Room Game
+            </a>
+            <a
+              class="links"
+              href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
+              ><img class="githubIcon" src="assets/github.png" />
+            </a>
+            <a href="https://gc-blackout.herokuapp.com" target="_blank">
+              <img class="blackout" src="assets/Blackout Title Screen.png" />
+            </a>
+          </div>
+          <div class="column">
+            <p>Languages: HTML | CSS | Angular 7</p>
+          </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="contact">
+          <h3 class="title">C O N T A C T</h3>
+          <img class="profileImg" src="./assets/IMG_5848.jpeg" />
         </section>
       </main>
 

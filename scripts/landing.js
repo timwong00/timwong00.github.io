@@ -20,5 +20,6 @@ let landing = `
     <span class="blue">4. </span>
     <p>Based in the Metro Detroit area.</p>
   </div>
-</section>;
+</section>
+
 `;
