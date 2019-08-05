@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   height: 80vh;
   border-bottom: 1px solid rgba(78, 77, 77, 0.274);
 }
@@ -18,13 +17,19 @@
   height: 25px;
 }
 
-/* .title {
-  align-items: flex-start;
-} */
+.title {
+  /* margin: 0; */
+}
 
 @media screen and (min-width: 768px) {
   .projects {
-    /* padding: 10% 5%; */
+  }
+
+  .projectCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 60vh;
   }
 
   .title {

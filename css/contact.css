@@ -17,6 +17,8 @@
 }
 
 .contactInfo {
+  background-color: rgb(177, 177, 177);
+  border: none;
   width: 100%;
   resize: none;
 }
