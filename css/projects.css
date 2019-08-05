@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   height: 80vh;
   border-bottom: 1px solid rgba(78, 77, 77, 0.274);
 }
@@ -12,6 +13,7 @@
 }
 
 .githubIcon {
+  display: inline-block;
   width: 25px;
   height: 25px;
 }
@@ -22,7 +24,7 @@
 
 @media screen and (min-width: 768px) {
   .projects {
-    padding: 10% 5%;
+    /* padding: 10% 5%; */
   }
 
   .title {

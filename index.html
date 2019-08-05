@@ -6,84 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tim Wong | Portfolio</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./scripts/landing.js"></script>
-    <script src="./scripts/projects.js"></script>
-    <script src="./scripts/contact.js"></script>
   </head>
   <body>
-    <div class="allContainer">
+    <!-- Main Page -->
+    <div id="allContainer" class="allContainer">
       <!-- Navigation -->
-      <header class="headerContainer">
-        <h1 class="pageTitle">
-          <a class="links" href="#landing"
-            >T I M <span class="space">W O N G</span></a
-          >
+      <header id="headerContainer" class="headerContainer">
+        <h1 id="pageTitle" class="pageTitle">
+          <a class="links" href="">T I M <span class="space">W O N G</span></a>
         </h1>
         <nav class="navBar">
-          <a class="links" href="#landing">Home</a>
+          <a class="links" href="#about">About</a>
           <span class="pipes"> | </span>
           <a class="links" href="#projects"> Projects</a>
           <span class="pipes"> | </span>
           <a class="links" href="#contact">Contact</a>
         </nav>
       </header>
-
       <!-- Content -->
       <main id="contentContainer" class="contentContainer">
-        <!-- Landing -->
-        <section id="landing" class="landing">
-          <h3 class="vocabulary">frontend developer</h3>
-          <p class="phonetic">/frən(t) ˈend dəˈveləpər/</p>
-          <p class="grammar">noun</p>
-
-          <div class="definitions">
-            <span class="blue">1. </span>
-            <p>
-              Former JET participant that studied Management and Japanese at
-              Purdue University.
-            </p>
-            <span class="blue">2. </span>
-            <p>
-              Passionate about learning new technologies and gaining valuable
-              experiences.
-            </p>
-            <span class="blue">3. </span>
-            <p>
-              Constantly improving exisiting skill set.
-            </p>
-            <span class="blue">4. </span>
-            <p>Based in the Metro Detroit area.</p>
+        <!-- About -->
+        <section class="about">
+          <div class="column">
+            <img class="profileImg" src="./assets/IMG_5848.jpeg" />
+            <h3 class="vocabulary">frontend developer</h3>
+            <p class="phonetic">/frən(t) ˈend dəˈveləpər/</p>
+            <p class="grammar">noun</p>
+            <div class="definitions">
+              <span class="blue">1. </span>
+              <p>
+                Former JET participant that studied Management and Japanese at
+                Purdue University.
+              </p>
+              <span class="blue">2. </span>
+              <p>
+                Passionate about learning new technologies and gaining valuable
+                experiences.
+              </p>
+              <span class="blue">3. </span>
+              <p>
+                Constantly improving exisiting skill set.
+              </p>
+              <span class="blue">4. </span>
+              <p>Based in the Metro Detroit area.</p>
+            </div>
           </div>
         </section>
 
         <!-- Projects -->
         <section id="projects" class="projects">
-          <h3 class="title">projects</h3>
-          <div class="column">
-            <a
-              class="links"
-              href="https://gc-blackout.herokuapp.com"
-              target="_blank"
-            >
-              Blackout - Escape Room Game
-            </a>
-            <a
-              class="links"
-              href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
-              ><img class="githubIcon" src="assets/github.png" />
-            </a>
-            <a href="https://gc-blackout.herokuapp.com" target="_blank">
-              <img class="blackout" src="assets/Blackout Title Screen.png" />
-            </a>
+          <div class="row">
+            <h3 class="title">projects</h3>
           </div>
-          <div class="column">
-            <p>Languages: HTML | CSS | Angular 7</p>
+          <div class="row projectWrapper">
+            <div class="projectCards">
+              <div class="column">
+                <a
+                  class="links"
+                  href="https://gc-blackout.herokuapp.com"
+                  target="_blank"
+                >
+                  Blackout - Escape Room Game
+                  <a
+                    class="links"
+                    href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
+                    target="_blank"
+                    ><img class="githubIcon" src="assets/github.png" />
+                  </a>
+                </a>
+
+                <a href="https://gc-blackout.herokuapp.com" target="_blank">
+                  <img
+                    class="blackout"
+                    src="assets/Blackout Title Screen.png"
+                  />
+                </a>
+              </div>
+              <div class="column">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eveniet amet ipsam at, animi laudantium recusandae tempore
+                  maiores tenetur inventore, distinctio eaque praesentium culpa
+                  eum excepturi enim earum ad ipsum omnis?
+                </p>
+                <p>Technologies: HTML | CSS | Angular 7</p>
+              </div>
+            </div>
           </div>
         </section>
         <!-- Contact -->
         <section id="contact" class="contact">
-          <h3 class="title">C O N T A C T</h3>
-          <img class="profileImg" src="./assets/IMG_5848.jpeg" />
+          <h3 class="title">contact</h3>
+          <form class="contactForm">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              class="contactInfo"
+              placeholder="Name"
+            />
+            <label for="email">Your Email</label>
+            <input
+              type="text"
+              name="email"
+              class="contactInfo"
+              placeholder="Email"
+            />
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              class="contactInfo"
+              placeholder="Subject"
+            />
+            <label for="message">Your Message</label>
+            <textarea
+              name="message"
+              class="contactInfo"
+              placeholder="Message"
+            ></textarea>
+            <button class="contactBtn">Send Message</button>
+          </form>
         </section>
       </main>
 
