@@ -160,6 +160,12 @@
     height: 400px;
   }
 
+  .projectTitle,
+  .projectTech,
+  .projectText {
+    padding: 30px;
+  }
+
   .previousBtn,
   .nextBtn,
   .dotContainer {
