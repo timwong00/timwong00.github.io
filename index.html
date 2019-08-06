@@ -44,52 +44,117 @@
                 experiences.
               </p>
               <span class="blue">3. </span>
-              <p>
-                Constantly improving exisiting skill set.
-              </p>
-              <span class="blue">4. </span>
-              <p>Based in the Metro Detroit area.</p>
+              <p>Currently based in the Metro Detroit area.</p>
             </div>
           </div>
         </section>
 
         <!-- Projects -->
         <section id="projects" class="projects contentChild">
-          <div class="row">
-            <h3 class="title">projects</h3>
-          </div>
-          <div class="row projectWrapper">
-            <div class="projectCards">
-              <div class="column">
-                <a
-                  class="links"
-                  href="https://gc-blackout.herokuapp.com"
-                  target="_blank"
-                >
-                  Blackout - Escape Room Game
-                  <a
-                    class="links"
-                    href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
-                    target="_blank"
-                    ><img class="githubIcon" src="assets/github.png" />
-                  </a>
-                </a>
-
-                <a href="https://gc-blackout.herokuapp.com" target="_blank">
+          <!-- <div class="row"> -->
+          <h3 class="title">projects</h3>
+          <!-- </div> -->
+          <div class="projectRow projectCarousel">
+            <!-- Project BlackOut -->
+            <div class="flipCard projectItem">
+              <div class="flipCardInner">
+                <div class="flipCardFront">
                   <img
-                    class="blackout"
-                    src="assets/Blackout Title Screen.png"
+                    class="projectPicture"
+                    src="assets/Blackout Gameplay 1.png"
+                    alt="blackout app picture"
                   />
-                </a>
+                </div>
+                <div class="flipCardBack">
+                  <p class="projectTitle">BlackOut</p>
+                  <p class="projectTech">HTML | CSS | Angular 7</p>
+                  <p class="projectText">
+                    Virtual escape room game where players find clues to
+                    ultimately unlock their freedom.
+                  </p>
+                  <div class="projectBtnContainer">
+                    <a
+                      class="projectBtn"
+                      href="https://gc-blackout.herokuapp.com"
+                      target="_blank"
+                      >App</a
+                    >
+                    <a
+                      class="projectBtn"
+                      href="https://github.com/timwong00/GC-Final-Project-Escape-Room"
+                      target="_blank"
+                      >Github
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="column">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Eveniet amet ipsam at, animi laudantium recusandae tempore
-                  maiores tenetur inventore, distinctio eaque praesentium culpa
-                  eum excepturi enim earum ad ipsum omnis?
-                </p>
-                <p>Technologies: HTML | CSS | Angular 7</p>
+            </div>
+            <!-- Project Mitchual -->
+            <div class="flipCard projectItem">
+              <div class="flipCardInner">
+                <div class="flipCardFront">
+                  <img
+                    class="projectPicture"
+                    src="assets/mitchual.png"
+                    alt="mitchual app picture"
+                  />
+                </div>
+                <div class="flipCardBack">
+                  <p class="projectTitle">Mitchual</p>
+                  <p class="projectTech">HTML | CSS | Angular 7</p>
+                  <p class="projectText">
+                    Recipe finder that utilizes Edamam API to search based on
+                    ingredient, calories, and/or diet.
+                  </p>
+                  <div class="projectBtnContainer">
+                    <a
+                      class="projectBtn"
+                      href="https://github.com/timwong00/ngProject-Mitchual"
+                      target="_blank"
+                      >Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project Game of Memory -->
+            <div class="flipCard projectItem">
+              <div class="flipCardInner">
+                <div class="flipCardFront">
+                  <img
+                    class="projectPicture"
+                    src="assets/game of memory.png"
+                    alt="game of memory app picture"
+                  />
+                </div>
+                <div class="flipCardBack">
+                  <p class="projectTitle">Game of Memory</p>
+                  <p class="projectTech">HTML | CSS | JavaScript</p>
+                  <p class="projectText">
+                    Game of Thrones themed memory game using only vanilla
+                    JavaScript
+                  </p>
+                  <div class="projectBtnContainer">
+                    <a
+                      class="projectBtn"
+                      href="https://github.com/timwong00/GC-Project-1-Memory-Game"
+                      target="_blank"
+                      >Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="projectNavContainer">
+              <!-- Next and Previous Buttons -->
+              <a class="previousBtn" onClick="nextProject(-1)">&#10094;</a>
+              <a class="nextBtn" onClick="nextProject(1)">&#10095;</a>
+              <!-- Dots -->
+              <div class="dotContainer">
+                <span class="dot" onClick="currentProject(1)"></span>
+                <span class="dot" onClick="currentProject(2)"></span>
+                <span class="dot" onClick="currentProject(3)"></span>
               </div>
             </div>
           </div>
@@ -97,16 +162,21 @@
         <!-- Contact -->
         <section id="contact" class="contact contentChild">
           <h3 class="title">contact</h3>
-          <form class="contactForm">
+          <form
+            class="contactForm"
+            action="https://formspree.io/wongtime317@gmail.com"
+            method="POST"
+          >
             <label for="name">Your Name</label>
             <input type="text" name="name" class="contactInfo" />
             <label for="email">Your Email</label>
-            <input type="text" name="email" class="contactInfo" />
-            <label for="subject">Subject</label>
-            <input type="text" name="subject" class="contactInfo" />
+            <input type="email" name="email" class="contactInfo" />
             <label for="message">Your Message</label>
-            <textarea name="message" class="contactInfo"></textarea>
-            <button class="contactBtn">Send Message</button>
+            <textarea
+              name="message"
+              class="contactInfo contactMessage"
+            ></textarea>
+            <button class="contactBtn" type="submit">Send Message</button>
           </form>
         </section>
       </main>
@@ -114,11 +184,17 @@
       <!-- Footer -->
       <footer class="footerContainer">
         <a href="https://www.linkedin.com/in/timwong00/" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/timwong00" target="_blank">Github</a>
-        <a href="mailto:wongtime317@gmail.com" target="_blank">Email</a>
-        <a href="assets/Resume.pdf" target="_blank">Resume</a>
+          ><img class="socialIcons" src="./assets/linkedin.png" alt="linkedin"
+        /></a>
+        <a href="https://github.com/timwong00" target="_blank"
+          ><img class="socialIcons" src="./assets/github.png" alt="github"
+        /></a>
+        <a href="mailto:wongtime317@gmail.com" target="_blank"
+          ><img class="socialIcons" src="./assets/email.png" alt="email"
+        /></a>
+        <a href="assets/Resume.pdf" target="_blank"
+          ><img class="socialIcons" src="./assets/resume.png" alt="resume"
+        /></a>
       </footer>
     </div>
     <script src="./scripts/main.js"></script>

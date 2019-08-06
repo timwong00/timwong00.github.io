@@ -37,7 +37,7 @@ body {
   height: 100%;
 }
 
-.links {
+/* .links {
   text-decoration: none;
   color: black;
   margin: 0px 15px;
@@ -46,7 +46,7 @@ body {
 .links:hover {
   color: blue;
   cursor: pointer;
-}
+} */
 
 @media screen and (min-width: 768px) {
 }

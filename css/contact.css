@@ -6,29 +6,34 @@
   border-bottom: 1px solid rgba(78, 77, 77, 0.274);
 }
 
+/* Contact Form */
 .contactForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  height: auto;
+  width: 70%;
+  height: 40%;
   border: 1px solid black;
-  padding: 40px;
+  padding: 20px;
 }
 
 .contactInfo {
+  font-size: 20px;
   background-color: rgb(177, 177, 177);
   border: none;
   width: 100%;
-  resize: none;
+  height: 100px;
 }
 
-.contactBtn {
+.contactMessage {
+  width: 100%;
+  height: 200px;
+  resize: none;
 }
 
 @media screen and (min-width: 768px) {
   .contact {
-    padding: 10% 5%;
+    /* padding: 10% 5%; */
   }
 
   .title {

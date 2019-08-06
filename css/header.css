@@ -2,6 +2,7 @@
   background-color: white;
   border-bottom: 1px solid rgba(78, 77, 77, 0.274);
   width: 100vw;
+  height: 12vh;
   position: relative;
   top: 0;
   z-index: 1;
@@ -48,6 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 10vh;
   }
 
   .pageTitle {
