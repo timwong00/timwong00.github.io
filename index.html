@@ -167,15 +167,12 @@
             action="https://formspree.io/wongtime317@gmail.com"
             method="POST"
           >
-            <label for="name">Your Name</label>
-            <input type="text" name="name" class="contactInfo" />
-            <label for="email">Your Email</label>
-            <input type="email" name="email" class="contactInfo" />
-            <label for="message">Your Message</label>
-            <textarea
-              name="message"
-              class="contactInfo contactMessage"
-            ></textarea>
+            <label class="contactLabel" for="name">Your Name</label>
+            <input type="text" name="name" class="contactInfo" required />
+            <label class="contactLabel" for="email">Your Email</label>
+            <input type="email" name="email" class="contactInfo" required />
+            <label class="contactLabel" for="message">Your Message</label>
+            <textarea name="message" class="contactMessage" required></textarea>
             <button class="contactBtn" type="submit">Send Message</button>
           </form>
         </section>

@@ -8,7 +8,14 @@
 
 .title {
   margin: 10px;
-  padding: 75px;
+  padding: 50px;
+}
+
+.projectCarousel {
+  max-width: 1000px;
+  position: relative;
+  margin: 0;
+  padding: 20px;
 }
 
 .flipCard {
@@ -85,29 +92,24 @@
   padding: 10px;
 }
 
-.projectCarousel {
-  max-width: 1000px;
-  position: relative;
-  margin: 0;
-}
-
 .projectItem {
   display: none;
+  padding: 10px;
 }
 
 .projectNavContainer {
-  margin-top: 10px;
+  padding-top: 10px;
   position: relative;
+  /* border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black; */
 }
 
 .previousBtn,
 .nextBtn {
   cursor: pointer;
   position: absolute;
-  /* top: 50%; */
   width: auto;
-  /* margin-top: -22px; */
-  /* padding: 16px; */
   color: black;
   font-weight: bold;
   font-size: 14px;
@@ -134,7 +136,7 @@
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0, 2px;
+  margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -147,10 +149,20 @@
 }
 
 @media screen and (min-width: 768px) {
-  .projects {
+  .title {
+    margin: 10px;
+    padding: 10px;
   }
 
-  .title {
+  .flipCard,
+  .projectPicture {
+    width: 600px;
+    height: 400px;
+  }
+
+  .previousBtn,
+  .nextBtn,
+  .dotContainer {
     font-size: 28px;
   }
 }
