@@ -5,7 +5,10 @@
   position: relative;
   height: 80vh;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(78, 77, 77, 0.274);
+  /* border-bottom: 1px solid rgba(78, 77, 77, 0.274); */
+
+  /* Dark Mode */
+  border-bottom: 1px solid white;
 }
 
 .vocabulary {
@@ -22,7 +25,8 @@
 
 .definitions {
   position: relative;
-  margin: 0 10px;
+  width: 80%;
+  /* margin: 0 20px; */
 }
 
 .definitions > p {
@@ -31,29 +35,25 @@
 }
 
 .blue {
-  color: blue;
+  color: white;
   position: absolute;
   left: 0px;
 }
 
 .profileImg {
-  margin-top: 5%;
-  width: 75%;
+  margin-top: 15px;
+  width: 300px;
   height: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .about {
-    /* padding: 10% 5%; */
-  }
-
   .vocabulary {
     font-size: 28px;
   }
 
   .profileImg {
-    margin-top: 3%;
-    width: 30%;
+    margin-top: 20px;
+    width: 400px;
     height: auto;
   }
 }

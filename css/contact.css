@@ -13,9 +13,9 @@
   align-items: center;
   max-width: 1000px;
   width: 300px;
-  height: 300px;
+  height: 350px;
   border: 1px solid black;
-  padding: 15px;
+  /* padding: 15px; */
 }
 
 .contactLabel {
@@ -24,49 +24,57 @@
 
 .contactInfo,
 .contactMessage {
-  font-size: 20px;
-  background-color: rgb(209, 207, 207);
+  font-size: 12px;
   padding: 5px;
   width: 100%;
 }
 
 .contactInfo {
   border: none;
-  height: 50px;
+  height: 20px;
 }
 
 .contactMessage {
   resize: none;
-  height: 200px;
+  height: 50px;
 }
 
 .contactBtn {
+  background-color: white;
+  border: 1px solid rgb(39, 39, 223);
+  color: rgb(39, 39, 223);
   cursor: pointer;
-  margin: 10px;
+  margin: 15px;
   padding: 10px 30px 10px 30px;
   font-size: 16px;
 }
 
 .contactBtn:hover {
-  color: blue;
+  background-color: rgb(39, 39, 223);
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
   .contactForm {
+    margin-top: 30px;
     width: 600px;
     height: 400px;
   }
 
   .contactInfo {
+    font-size: 16px;
     width: 70%;
     height: 25px;
   }
 
   .contactMessage {
     width: 70%;
+    height: 100px;
   }
 
-  .title {
-    font-size: 28px;
+  .contactBtn {
+    margin: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
   }
 }

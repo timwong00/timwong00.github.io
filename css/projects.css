@@ -3,12 +3,15 @@
   flex-direction: column;
   align-items: center;
   height: 80vh;
-  border-bottom: 1px solid rgba(78, 77, 77, 0.274);
+  /* border-bottom: 1px solid rgba(78, 77, 77, 0.274); */
+
+  /* Dark Mode */
+  border-bottom: 1px solid white;
 }
 
 .title {
   margin: 10px;
-  padding: 50px;
+  padding: 40px;
 }
 
 .projectCarousel {
@@ -22,9 +25,12 @@
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   perspective: 1000px;
   position: relative;
+
+  /* Dark Mode */
+  /* border: 1px solid white; */
 }
 
 .flipCardInner {
@@ -71,7 +77,7 @@
 }
 
 .projectTech {
-  color: blue;
+  color: rgb(39, 39, 223);
   font-size: 12px;
 }
 
@@ -84,12 +90,22 @@
   left: 50%;
   bottom: 10%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .projectBtn {
-  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid rgb(39, 39, 223);
+  color: rgb(39, 39, 223);
   text-decoration: none;
   padding: 10px;
+  width: 20%;
+}
+
+.projectBtn:hover {
+  color: white;
+  background-color: rgb(39, 39, 223);
 }
 
 .projectItem {
@@ -110,17 +126,20 @@
   cursor: pointer;
   position: absolute;
   width: auto;
-  color: black;
+  /* color: black; */
   font-weight: bold;
   font-size: 14px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  /* border-radius: 0 3px 3px 0; */
   user-select: none;
+
+  /* Dark Mode */
+  color: white;
 }
 
 .nextBtn {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  /* border-radius: 3px 0 0 3px; */
 }
 
 .previousBtn:hover,
@@ -150,6 +169,7 @@
 
 @media screen and (min-width: 768px) {
   .title {
+    font-size: 28px;
     margin: 10px;
     padding: 10px;
   }
@@ -164,6 +184,18 @@
   .projectTech,
   .projectText {
     padding: 30px;
+  }
+
+  .projectTitle {
+    font-size: 24px;
+  }
+
+  .projectTech {
+    font-size: 16px;
+  }
+
+  .projectText {
+    font-size: 20px;
   }
 
   .previousBtn,

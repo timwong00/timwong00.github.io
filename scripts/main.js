@@ -31,3 +31,28 @@ function displayProject(num) {
   projects[projectIndex - 1].style.display = "flex";
   dots[projectIndex - 1].className += " active";
 }
+
+// 37 arrowLeft
+// 39 arrowRight
+let content = document.querySelector("#contentContainer");
+content.onclick = function(event) {
+  console.log(content.scrollTop);
+};
+content.onscroll = function() {
+  if (content.scrollTop < 582) {
+    let aboutLink = document.getElementById("aboutLink");
+    aboutLink.classList.add("activeLink");
+    projectsLink.classList.remove("activeLink");
+    contactLink.classList.remove("activeLink");
+  } else if (content.scrollTop >= 582 && content.scrollTop < 1159) {
+    let projectsLink = document.getElementById("projectsLink");
+    projectsLink.classList.add("activeLink");
+    aboutLink.classList.remove("activeLink");
+    contactLink.classList.remove("activeLink");
+  } else if (content.scrollTop >= 1159) {
+    let contactLink = document.getElementById("contactLink");
+    contactLink.classList.add("activeLink");
+    aboutLink.classList.remove("activeLink");
+    projectsLink.classList.remove("activeLink");
+  }
+};
