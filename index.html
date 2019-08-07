@@ -18,12 +18,14 @@
         </h1>
         <nav class="navBar">
           <a id="aboutLink" class="links" href="#about">About</a>
-          <!-- <span class="pipes"> | </span> -->
+          <div class="verticalLine"></div>
           <a id="projectsLink" class="links" href="#projects"> Projects</a>
-          <!-- <span class="pipes"> | </span> -->
+          <div class="verticalLine"></div>
           <a id="contactLink" class="links" href="#contact">Contact</a>
         </nav>
       </header>
+
+      <div class="headerPush"></div>
 
       <!-- Content -->
       <main id="contentContainer" class="contentContainer">
@@ -58,16 +60,14 @@
           <!-- </div> -->
           <div id="projectCarousel" class="projectRow projectCarousel">
             <!-- Project BlackOut -->
-            <div class="flipCard projectItem">
-              <div class="flipCardInner">
-                <div class="flipCardFront">
-                  <img
-                    class="projectPicture"
-                    src="assets/Blackout Gameplay 1.png"
-                    alt="blackout app picture"
-                  />
-                </div>
-                <div class="flipCardBack">
+            <div class="projectItem">
+              <div class="projectContainer">
+                <img
+                  class="projectPicture"
+                  src="assets/Blackout Gameplay 1.png"
+                  alt="blackout app picture"
+                />
+                <div class="overlay">
                   <p class="projectTitle">BlackOut</p>
                   <p class="projectTech">
                     HTML | CSS | Angular 7 | Node.js | PostgreSQL
@@ -94,16 +94,14 @@
               </div>
             </div>
             <!-- Project Mitchual -->
-            <div class="flipCard projectItem">
-              <div class="flipCardInner">
-                <div class="flipCardFront">
-                  <img
-                    class="projectPicture"
-                    src="assets/mitchual.png"
-                    alt="mitchual app picture"
-                  />
-                </div>
-                <div class="flipCardBack">
+            <div class="projectItem">
+              <div class="projectContainer">
+                <img
+                  class="projectPicture"
+                  src="assets/mitchual.png"
+                  alt="mitchual app picture"
+                />
+                <div class="overlay">
                   <p class="projectTitle">Mitchual</p>
                   <p class="projectTech">
                     HTML | CSS | Angular 7 | Node.js | PostgreSQL
@@ -124,16 +122,14 @@
               </div>
             </div>
             <!-- Project Game of Memory -->
-            <div class="flipCard projectItem">
-              <div class="flipCardInner">
-                <div class="flipCardFront">
-                  <img
-                    class="projectPicture"
-                    src="assets/game of memory.png"
-                    alt="game of memory app picture"
-                  />
-                </div>
-                <div class="flipCardBack">
+            <div class="projectItem">
+              <div class="projectContainer">
+                <img
+                  class="projectPicture"
+                  src="assets/game of memory.png"
+                  alt="game of memory app picture"
+                />
+                <div class="overlay">
                   <p class="projectTitle">Game of Memory</p>
                   <p class="projectTech">HTML | CSS | JavaScript</p>
                   <p class="projectText">
@@ -153,15 +149,16 @@
             </div>
 
             <div class="projectNavContainer">
-              <!-- Next and Previous Buttons -->
+              <!-- Previous Button -->
               <a class="previousBtn" onClick="nextProject(-1)">&#10094;</a>
-              <a class="nextBtn" onClick="nextProject(1)">&#10095;</a>
               <!-- Dots -->
               <div class="dotContainer">
                 <span class="dot" onClick="currentProject(1)"></span>
                 <span class="dot" onClick="currentProject(2)"></span>
                 <span class="dot" onClick="currentProject(3)"></span>
               </div>
+              <!-- Next Button -->
+              <a class="nextBtn" onClick="nextProject(1)">&#10095;</a>
             </div>
           </div>
         </section>
@@ -184,6 +181,8 @@
           </form>
         </section>
       </main>
+
+      <div class="footerPush"></div>
 
       <!-- Footer -->
       <footer class="footerContainer">

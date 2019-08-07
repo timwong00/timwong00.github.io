@@ -1,9 +1,9 @@
 .headerContainer {
-  background-color: white;
+  background-color: whitesmoke;
   border-bottom: 1px solid rgba(78, 77, 77, 0.274);
   width: 100vw;
   height: 12vh;
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 1;
 }
@@ -52,8 +52,13 @@
   padding: 4px;
 }
 
-.pipes {
-  font-size: 16px;
+.verticalLine {
+  border-left: 2px solid black;
+  height: 20px;
+}
+
+.headerPush {
+  height: 12vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -67,6 +72,11 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    /* height: 10vh; */
+  }
+
+  .headerContainer,
+  .headerPush {
     height: 10vh;
   }
 
@@ -76,10 +86,21 @@
   }
 
   .navBar {
-    font-size: 20px;
+    font-size: 22px;
   }
 
-  .pipes {
-    font-size: 30px;
+  .verticalLine {
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .headerContainer,
+  .headerPush {
+    height: 8vh;
+  }
+
+  .navBar {
+    font-size: 24px;
   }
 }

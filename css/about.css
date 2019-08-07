@@ -10,13 +10,13 @@
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  height: 80vh;
+  height: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* border-bottom: 1px solid rgba(78, 77, 77, 0.274); */
 
   /* Dark Mode */
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid whitesmoke;
 }
 
 .vocabulary {
@@ -33,7 +33,7 @@
 
 .definitions {
   position: relative;
-  width: 80%;
+  width: 90%;
   /* margin: 0 20px; */
 }
 
@@ -50,7 +50,7 @@
 
 .profileImg {
   margin-top: 15px;
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
@@ -58,9 +58,23 @@
   .vocabulary {
     font-size: 28px;
   }
+  .phonetic {
+    font-size: 20px;
+  }
+  .grammar,
+  .definitions {
+    font-size: 18px;
+  }
 
   .profileImg {
     margin-top: 20px;
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profileImg {
     width: 400px;
     height: auto;
   }

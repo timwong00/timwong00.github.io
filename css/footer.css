@@ -1,3 +1,9 @@
+.footerPush {
+  height: 8vh;
+  position: relative;
+  bottom: 0;
+}
+
 .footerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,9 +16,11 @@
   align-items: center;
   width: 100vw;
   height: 8vh;
-  background-color: white;
-  border-top: 1px solid rgba(78, 77, 77, 0.274);
-  position: relative;
+  background-color: whitesmoke;
+  /* border-top: 1px solid rgba(78, 77, 77, 0.274); */
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -31,8 +39,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footerContainer {
-    height: 10vh;
+  .footerContainer,
+  .footerPush {
+    height: 8vh;
   }
 
   .socialIcons {
@@ -41,3 +50,10 @@
     /* margin: 5px; */
   }
 }
+
+/* @media screen and (min-width: 1024px) {
+  .footerContainer,
+  .footerPush {
+    height: 6vh;
+  }
+} */
