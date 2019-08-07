@@ -38,11 +38,12 @@ body {
   box-sizing: border-box;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
-  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .contentChild {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .column {
