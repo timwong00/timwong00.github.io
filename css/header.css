@@ -6,6 +6,9 @@
   position: fixed;
   top: 0;
   z-index: 1;
+
+  /* Dark Mode */
+  /* background-color: black; */
 }
 
 .navBar {

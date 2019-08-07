@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   /* overflow: hidden; */
+  /* background-color: whitesmoke; */
 
   /* Dark Mode */
   color: whitesmoke;
@@ -36,10 +37,13 @@ body {
   width: 100vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+
+  /* CSS Smooth Scroll */
+  /* scroll-behavior: smooth; */
+
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   -webkit-overflow-scrolling: touch;
 }
 

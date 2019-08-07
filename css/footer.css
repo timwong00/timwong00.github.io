@@ -23,6 +23,9 @@
   z-index: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+
+  /* Dark Mode */
+  /* background-color: black; */
 }
 
 .socialIcons {
