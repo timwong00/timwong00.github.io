@@ -66,8 +66,8 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .contentContainer {
-    height: 84vh;
+    height: 82vh;
   }
-}
+} */

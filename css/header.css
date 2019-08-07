@@ -97,7 +97,7 @@
 @media screen and (min-width: 1024px) {
   .headerContainer,
   .headerPush {
-    height: 8vh;
+    height: 9vh;
   }
 
   .navBar {

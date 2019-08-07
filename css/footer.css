@@ -35,13 +35,12 @@
 .socialIcons:hover {
   -webkit-box-shadow: 0px 0px 2px 2px inset rgb(39, 39, 223);
   box-shadow: 0px 0px 2px 2px inset rgb(39, 39, 223);
-  padding: 4px;
 }
 
 @media screen and (min-width: 768px) {
   .footerContainer,
   .footerPush {
-    height: 8vh;
+    height: 9vh;
   }
 
   .socialIcons {
