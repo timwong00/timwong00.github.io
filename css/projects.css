@@ -107,6 +107,7 @@
 .projectBtn:hover {
   color: white;
   background-color: rgb(39, 39, 223);
+  -webkit-box-shadow: 2px 2px 2px 2px rgb(39, 39, 223);
   box-shadow: 2px 2px 2px 2px rgb(39, 39, 223);
 }
 

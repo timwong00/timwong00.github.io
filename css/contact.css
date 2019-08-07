@@ -1,6 +1,13 @@
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 80vh;
   border-bottom: 1px solid rgba(78, 77, 77, 0.274);
@@ -8,8 +15,15 @@
 
 /* Contact Form */
 .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   max-width: 1000px;
   width: 300px;
@@ -52,6 +66,7 @@
 .contactBtn:hover {
   color: white;
   background-color: rgb(39, 39, 223);
+  -webkit-box-shadow: 2px 2px 2px 2px rgb(39, 39, 223);
   box-shadow: 2px 2px 2px 2px rgb(39, 39, 223);
 }
 
