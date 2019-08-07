@@ -50,8 +50,9 @@
 }
 
 .contactBtn:hover {
-  background-color: rgb(39, 39, 223);
   color: white;
+  background-color: rgb(39, 39, 223);
+  box-shadow: 2px 2px 2px 2px rgb(39, 39, 223);
 }
 
 @media screen and (min-width: 768px) {
