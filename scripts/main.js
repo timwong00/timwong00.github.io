@@ -1,8 +1,5 @@
 "use strict";
 
-// Smooth Scroll
-const scroll = new SmoothScroll('.navBar a[href*="#"]');
-
 // Project Carousel
 let projectIndex = 1;
 displayProject(projectIndex);
@@ -34,3 +31,6 @@ function displayProject(num) {
   projects[projectIndex - 1].style.display = "flex";
   dots[projectIndex - 1].className += " active";
 }
+
+// // Smooth Scroll
+// const scroll = new SmoothScroll('.navBar a[href*="#"]');
