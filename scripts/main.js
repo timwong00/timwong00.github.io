@@ -34,3 +34,5 @@ function displayProject(num) {
 
 // // Smooth Scroll
 // const scroll = new SmoothScroll('.navBar a[href*="#"]');
+
+document.addEventListener("touchstart", function() {}, true);
