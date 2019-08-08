@@ -72,7 +72,8 @@
   justify-content: space-evenly;
 }
 
-.projectContainer:hover .overlay {
+.projectContainer:hover .overlay,
+.projectContainer:active .overlay {
   opacity: 1;
 }
 
