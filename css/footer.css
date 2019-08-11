@@ -1,5 +1,5 @@
 .footerPush {
-  height: 8vh;
+  height: 6vh;
   position: relative;
   bottom: 0;
 }
@@ -15,7 +15,7 @@
   -ms-flex-align: center;
   align-items: center;
   width: 100vw;
-  height: 8vh;
+  height: 6vh;
   background-color: whitesmoke;
   /* border-top: 1px solid rgba(78, 77, 77, 0.274); */
   position: fixed;
@@ -27,29 +27,28 @@
   /* Dark Mode */
   /* background-color: black; */
 }
-
+/* 
 .socialIcons {
   width: 35px;
   height: 35px;
-  /* margin: 5px; */
   padding: 4px;
+} */
+
+.socialIcons {
+  color: black;
+  padding: 8px;
 }
 
 .socialIcons:hover {
   -webkit-box-shadow: 0px 0px 2px 2px inset rgb(39, 39, 223);
   box-shadow: 0px 0px 2px 2px inset rgb(39, 39, 223);
+  color: blue;
 }
 
 @media screen and (min-width: 768px) {
   .footerContainer,
   .footerPush {
-    height: 9vh;
-  }
-
-  .socialIcons {
-    width: 50px;
-    height: 50px;
-    /* margin: 5px; */
+    height: 8vh;
   }
 }
 

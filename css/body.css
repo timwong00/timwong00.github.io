@@ -37,7 +37,7 @@ body {
 .contentContainer {
   margin: 0;
   position: relative;
-  height: 80vh;
+  height: 82vh;
   width: 100vw;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -71,12 +71,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .contentContainer {
-    height: 82vh;
+    height: 85vh;
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .contentContainer {
     height: 82vh;
   }
-}
+} */
