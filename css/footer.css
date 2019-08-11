@@ -55,8 +55,8 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .iconContainer:hover .sweepToRight {
