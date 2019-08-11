@@ -27,22 +27,33 @@
   /* Dark Mode */
   /* background-color: black; */
 }
-/* 
-.socialIcons {
-  width: 35px;
-  height: 35px;
-  padding: 4px;
-} */
+
+.iconContainer {
+  position: relative;
+}
 
 .socialIcons {
   color: black;
-  padding: 8px;
 }
 
-.socialIcons:hover {
+/* .socialIcons:hover {
   -webkit-box-shadow: 0px 0px 2px 2px inset rgb(39, 39, 223);
   box-shadow: 0px 0px 2px 2px inset rgb(39, 39, 223);
   color: blue;
+} */
+
+.sweepToRight {
+  position: absolute;
+  color: blue;
+  width: 0;
+  top: 0;
+  /* left: 0; */
+  overflow: hidden;
+  transition: 1s;
+}
+
+.iconContainer:hover .sweepToRight {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
