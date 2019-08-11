@@ -31,9 +31,14 @@
 /* Social Icon Hover Effect */
 .iconContainer {
   position: relative;
+  width: 28px;
+  height: 32px;
 }
 
 .socialIcons {
+  position: absolute;
+  top: 0;
+  left: 0;
   color: black;
 }
 
@@ -48,7 +53,7 @@
   color: blue;
   width: 0;
   top: 0;
-  /* left: 0; */
+  left: 0;
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
